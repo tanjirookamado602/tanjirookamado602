@@ -1,8 +1,3 @@
-# GitLab Pages CI/CD configuration
-# Automatically deploys the static academic homepage to https://assassinaj602.gitlab.io/
-
-image: alpine:latest
-
 pages:
   stage: deploy
   script:
