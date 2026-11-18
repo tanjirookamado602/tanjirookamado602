@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Muhammad Assad Ullah - Academic Homepage</title>
+  <meta name="description" content="Personal academic research homepage of Muhammad Assad Ullah. Edge AI Research Engineer at Duke Kunshan University and CS undergraduate at UET Taxila.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Top Navigation -->
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#publications">Publications</a></li>
+        <li><a href="#software">Software</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#honors">Honors</a></li>
+        <li><a href="#references">References</a></li>
+      </ul>
+      <button class="theme-toggle-btn" onclick="toggleTheme()" aria-label="Toggle theme">Toggle Theme</button>
+    </nav>
+
+    <!-- Header / Profile Section -->
+    <header class="profile-header">
+      <div class="profile-info">
+        <h1>Muhammad Assad Ullah</h1>
+        <div class="profile-title">Edge AI Research Engineer &amp; Mobile Systems Researcher</div>
+        <div class="profile-affiliations">
+          Edge Intelligence Lab, Duke Kunshan University<br>
+          Department of Computer Science, University of Engineering and Technology (UET) Taxila
+        </div>
+        <div class="profile-links">
+          <a href="Muhammad_Assad_Ullah_CV.pdf" target="_blank">[CV (PDF)]</a>
+          <a href="mailto:asadullahaj602@gmail.com">[Email]</a>
+          <a href="https://orcid.org/0009-0007-2290-304X" target="_blank">[ORCID]</a>
+          <a href="https://gitlab.com/assassinaj602" target="_blank">[GitLab]</a>
+          <a href="https://linkedin.com/in/assassinaj602" target="_blank">[LinkedIn]</a>
+          <a href="https://gitlab.com/assassinaj602/portfolio" target="_blank">[Portfolio]</a>
+        </div>
+      </div>
+      <img src="avatar.jpg" alt="Muhammad Assad Ullah" class="profile-photo">
+    </header>
+
+    <!-- About Section -->
+    <section id="about">
+      <h2>About Me</h2>
+      <p>
+        I am a final-year Computer Science undergraduate at the University of Engineering and Technology (UET) Taxila, Pakistan, and currently work remotely as an Edge AI Research Engineer at Duke Kunshan University's Edge Intelligence Lab under the supervision of Associate Professor Bing Luo.
+      </p>
+      <p>
+        My research focuses on on-device machine learning inference, mobile systems engineering, and edge AI reliability. Rather than focusing exclusively on cloud-scale model training, my work concentrates on running, benchmarking, and fine-tuning models reliably on consumer edge hardware. I write low-level C and C++ native bridges (via JNI and dart:ffi) into inference runtimes such as llama.cpp and libmtmd, manage tensor memory manually, and build automated fault injection pipelines to study how models behave under severe hardware degradation and resource constraints.
+      </p>
+      <p>
+        My undergraduate thesis introduces <a href="https://gitlab.com/assassinaj602/auraf" target="_blank">AURAF</a> (Adaptive Unified Runtime Architecture for Flutter), a system designed to unify token budgeting, edge/cloud fallback strategies, and hardware-aware runtime execution for cross-platform mobile applications.
+      </p>
+    </section>
+
+    <!-- News Section -->
+    <section id="news">
+      <h2>News</h2>
+      <table class="news-table">
+        <tbody>
+          <tr>
+            <td class="news-date">October 2026</td>
+            <td class="news-desc">Preprint on joint fault injection and runtime observability released on Zenodo (DOI: 10.5281/zenodo.23262270).</td>
+          </tr>
+          <tr>
+            <td class="news-date">August 2026</td>
+            <td class="news-desc">Joined the Edge Intelligence Lab at Duke Kunshan University as a Remote Edge AI Research Engineer under Prof. Bing Luo.</td>
+          </tr>
+          <tr>
+            <td class="news-date">August 2026</td>
+            <td class="news-desc">Released SATE AI fault injection framework with 9 production releases and 160/160 quality score on pub.dev.</td>
+          </tr>
+          <tr>
+            <td class="news-date">July 2026</td>
+            <td class="news-desc">u2_flutter plugin adopted by the FSE research group at East China Normal University (ECNU) into their Kea2 framework (PRs #229 to #234 merged).</td>
+          </tr>
+          <tr>
+            <td class="news-date">July 2026</td>
+            <td class="news-desc">Upstream pull request #1196 merged into openatx/uiautomator2 (7.8k stars), officially listing u2_flutter as a supported driver plugin.</td>
+          </tr>
+          <tr>
+            <td class="news-date">June 2025</td>
+            <td class="news-desc">Joined DevCrew I/O as a Trainee Software Development Engineer working on production Flutter applications.</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- Publications Section -->
+    <section id="publications">
+      <h2>Publications &amp; Preprints</h2>
+
+      <!-- Paper 1 -->
+      <div class="pub-item">
+        <div class="pub-title">Characterising On-Device AI Failure Modes Under Joint Fault Injection and Runtime Observability</div>
+        <div class="pub-authors"><u>Muhammad Assad Ullah</u></div>
+        <div class="pub-venue">Zenodo Research Preprint, 2026</div>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.5281/zenodo.23262270" target="_blank">[DOI]</a>
+          <a href="https://zenodo.org/record/23262270" target="_blank">[Zenodo]</a>
+          <button onclick="toggleAbstract('abs-1')">[Abstract]</button>
+          <button onclick="toggleBibtex('bib-1')">[BibTeX]</button>
+          <a href="https://gitlab.com/assassinaj602/edgepulse" target="_blank">[Code]</a>
+        </div>
+        <div id="abs-1" class="pub-abstract">
+          <strong>Abstract:</strong> Evaluating on-device deep learning reliability typically treats fault injection and observability as independent stages. This paper introduces an integrated methodology combining automated mutation and memory fault injection with millisecond-granularity process telemetry. By evaluating quantized vision and language models across diverse mobile chipsets, we identify silent data corruptions and uncover an operating system level blind spot in standard Android thermal APIs during prolonged inference workloads.
+        </div>
+        <div id="bib-1" class="pub-bibtex">
+          <pre>@article{assadullah2026characterising,
+  title={Characterising On-Device AI Failure Modes Under Joint Fault Injection and Runtime Observability},
+  author={Assad Ullah, Muhammad},
+  journal={Zenodo Preprint},
+  year={2026},
+  doi={10.5281/zenodo.23262270}
+}</pre>
+          <button class="copy-btn" onclick="copyBibtex('bib-1', this)">Copy BibTeX</button>
+        </div>
+      </div>
+
+      <!-- Paper 2 -->
+      <div class="pub-item">
+        <div class="pub-title">SATE AI: A Fault Injection and Reliability Engineering Framework for On-Device AI Models</div>
+        <div class="pub-authors"><u>Muhammad Assad Ullah</u></div>
+        <div class="pub-venue">Zenodo Research Manuscript (Prepared for JOSS / arXiv submission), 2026</div>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.5281/zenodo.23250418" target="_blank">[DOI]</a>
+          <a href="https://zenodo.org/record/23250418" target="_blank">[Zenodo]</a>
+          <button onclick="toggleAbstract('abs-2')">[Abstract]</button>
+          <button onclick="toggleBibtex('bib-2')">[BibTeX]</button>
+          <a href="https://gitlab.com/assassinaj602/sate-ai" target="_blank">[Code]</a>
+        </div>
+        <div id="abs-2" class="pub-abstract">
+          <strong>Abstract:</strong> SATE AI is an open-source reliability engineering framework specifically designed for on-device machine learning models. It provides 11 systematic fault injectors (covering memory exhaustion, input corruption, latency jitter, and hardware throttling) across 8 model adapters including ONNX Runtime, TensorFlow Lite, llama.cpp, and MediaPipe. The framework executes an automated 246-case verification matrix to profile boundary failure modes in resource-constrained environments.
+        </div>
+        <div id="bib-2" class="pub-bibtex">
+          <pre>@article{assadullah2026sate,
+  title={SATE AI: A Fault Injection and Reliability Engineering Framework for On-Device AI Models},
+  author={Assad Ullah, Muhammad},
+  journal={Zenodo Preprint},
+  year={2026},
+  doi={10.5281/zenodo.23250418}
+}</pre>
+          <button class="copy-btn" onclick="copyBibtex('bib-2', this)">Copy BibTeX</button>
+        </div>
+      </div>
+
+      <!-- Paper 3 -->
+      <div class="pub-item">
+        <div class="pub-title">EdgePulse: A Runtime Observability Framework for Quantized LLMs on Consumer Edge Devices</div>
+        <div class="pub-authors"><u>Muhammad Assad Ullah</u></div>
+        <div class="pub-venue">Zenodo Research Preprint, 2026</div>
+        <div class="pub-actions">
+          <a href="https://doi.org/10.5281/zenodo.23248718" target="_blank">[DOI]</a>
+          <a href="https://zenodo.org/record/23248718" target="_blank">[Zenodo]</a>
+          <button onclick="toggleAbstract('abs-3')">[Abstract]</button>
+          <button onclick="toggleBibtex('bib-3')">[BibTeX]</button>
+          <a href="https://gitlab.com/assassinaj602/edgepulse" target="_blank">[Code]</a>
+        </div>
+        <div id="abs-3" class="pub-abstract">
+          <strong>Abstract:</strong> Deploying quantized large language models to client smartphones requires fine-grained understanding of hardware resource dynamics. EdgePulse provides high-frequency runtime telemetry capturing process resident set size (RSS), thermal state transitions, battery current draw, and per-token generation latencies on physical Android and iOS hardware during offline inference.
+        </div>
+        <div id="bib-3" class="pub-bibtex">
+          <pre>@article{assadullah2026edgepulse,
+  title={EdgePulse: A Runtime Observability Framework for Quantized LLMs on Consumer Edge Devices},
+  author={Assad Ullah, Muhammad},
+  journal={Zenodo Preprint},
+  year={2026},
+  doi={10.5281/zenodo.23248718}
+}</pre>
+          <button class="copy-btn" onclick="copyBibtex('bib-3', this)">Copy BibTeX</button>
+        </div>
+      </div>
+    </section>
+
+    <!-- Systems & Software Section -->
+    <section id="software">
+      <h2>Systems &amp; Software</h2>
+      <ul class="project-list">
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/sate-ai" target="_blank">SATE AI</a>
+          </div>
+          <div class="project-desc">
+            Fault-injection and chaos engineering toolkit for on-device artificial intelligence. Features 11 fault injectors, 8 runtime adapters (ONNX, TFLite, llama.cpp, MediaPipe), 246 automated test cases, and a 160/160 pub.dev quality rating with 9 published releases.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/edgepulse" target="_blank">EdgePulse</a>
+          </div>
+          <div class="project-desc">
+            Lightweight telemetry SDK for on-device inference. Captures real-time resident memory, battery drain, thermal throttling, and CPU utilization traces on physical Android and iOS devices.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/u2-flutter" target="_blank">u2_flutter</a>
+          </div>
+          <div class="project-desc">
+            Flutter UI automation driver extending openatx/uiautomator2 (7.8k stars) to enable automated testing on Flutter mobile applications. Listed in upstream repository via PR #1196, published on PyPI, and adopted by East China Normal University.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/mobile-fine-tuner" target="_blank">MobileFineTuner</a>
+          </div>
+          <div class="project-desc">
+            On-device parameter-efficient fine-tuning (PEFT/LoRA) pipeline for Qwen3.5-2B vision-language models executing fully on consumer Android hardware without cloud connectivity. Developed at Duke Kunshan University.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/auraf" target="_blank">AURAF Runtime Architecture</a>
+          </div>
+          <div class="project-desc">
+            Adaptive Unified Runtime Architecture for Flutter (BS Computer Science thesis). Provides token budgeting, hardware-aware execution, and seamless local-to-cloud fallback for mobile AI applications.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/multimodal-demo" target="_blank">Offline Multimodal Vision Assistant</a>
+          </div>
+          <div class="project-desc">
+            Fully local Android application running Qwen3-VL-2B offline with Vulkan GPU acceleration bridges, dense visual patch embedding memory layouts, and zero external network dependencies.
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/kea2-flutter" target="_blank">Kea2 Flutter GUI Testing</a>
+          </div>
+          <div class="project-desc">
+            Integrated Flutter testing extensions into the Kea2 GUI testing benchmark developed by the FSE research group at East China Normal University (merged PRs #229 to #234).
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/androtest24" target="_blank">AndroTest24 Flutter Benchmark</a>
+          </div>
+          <div class="project-desc">
+            Flutter application support extensions for the AndroTest24 GUI testing benchmark suite (ASE 2024 artifact repository; PR #2 merged, PR #4 under review).
+          </div>
+        </li>
+        <li class="project-item">
+          <div class="project-name">
+            <a href="https://gitlab.com/assassinaj602/litrun" target="_blank">LitRun Embedded Linux AI Runtime</a>
+          </div>
+          <div class="project-desc">
+            Embedded Linux runtime system with an interactive web fleet and cluster management dashboard for edge AI deployments.
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <!-- Experience Section -->
+    <section id="experience">
+      <h2>Research &amp; Professional Experience</h2>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-item-title">Edge AI Research Engineer (Remote)</span>
+          <span class="cv-item-date">August 2026 to Present</span>
+        </div>
+        <div class="cv-item-sub">Duke Kunshan University, Edge Intelligence Lab | Supervisor: Prof. Bing Luo</div>
+        <ul class="cv-item-bullets">
+          <li>Engineered an on-device training pipeline for Qwen3.5-2B VLM using PEFT/LoRA with the complete training loop running on consumer Android hardware.</li>
+          <li>Authored JNI and dart:ffi native bindings into llama.cpp and libmtmd, enabling direct multimodal inference with manual tensor memory layout management.</li>
+          <li>Integrated the SATE AI fault injection framework into the lab evaluation harness to quantify model robustness under thermal throttling and memory pressure.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-item-title">Trainee Artificial Intelligence Engineer</span>
+          <span class="cv-item-date">July 2026 to August 2026</span>
+        </div>
+        <div class="cv-item-sub">DevCrew I/O, Lahore, Pakistan</div>
+        <ul class="cv-item-bullets">
+          <li>Constructed production retrieval-augmented generation (RAG) pipelines integrating large language models with vector databases and REST APIs.</li>
+          <li>Handled dataset preprocessing, model evaluation benchmarks, and fine-tuning experiments.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-item-title">Trainee Software Development Engineer</span>
+          <span class="cv-item-date">June 2025 to August 2025</span>
+        </div>
+        <div class="cv-item-sub">DevCrew I/O, Lahore, Pakistan</div>
+        <ul class="cv-item-bullets">
+          <li>Contributed to full mobile development lifecycles in Flutter and delivered production features across client applications.</li>
+          <li>Integrated RESTful web services, authored unit test suites, and collaborated within an Agile team structure.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+      <h2>Education</h2>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-item-title">Bachelor of Science in Computer Science</span>
+          <span class="cv-item-date">August 2023 to July 2027 (Expected)</span>
+        </div>
+        <div class="cv-item-sub">University of Engineering and Technology (UET) Taxila, Pakistan</div>
+        <ul class="cv-item-bullets">
+          <li>Cumulative GPA: 3.31 / 4.00 (EQF Level 6).</li>
+          <li>Undergraduate Thesis: <a href="https://gitlab.com/assassinaj602/auraf" target="_blank">AURAF (Adaptive Unified Runtime Architecture for Flutter)</a>, unifying token budgeting, cloud and edge fallback, and hardware-aware execution.</li>
+          <li>Selected Coursework: Artificial Intelligence, Data Structures and Algorithms, Operating Systems, Database Systems, Computer Networks, Natural Language Processing, Compilers, Software Engineering.</li>
+        </ul>
+      </div>
+
+      <div class="cv-item">
+        <div class="cv-item-header">
+          <span class="cv-item-title">Intermediate in Computer Science (ICS)</span>
+          <span class="cv-item-date">August 2021 to May 2023</span>
+        </div>
+        <div class="cv-item-sub">Punjab Group of Colleges, DG Khan, Pakistan</div>
+        <ul class="cv-item-bullets">
+          <li>Final Score: 1001 / 1100.</li>
+          <li>Awarded 3rd Position across the entire D.G. Khan Board (2023).</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Honors & Awards Section -->
+    <section id="honors">
+      <h2>Honors &amp; Awards</h2>
+      <ul class="cv-item-bullets">
+        <li><strong>Board Merit Position</strong>: Secured 3rd Position overall in the Board of Intermediate and Secondary Education (BISE) D.G. Khan examination (2023).</li>
+        <li><strong>Academic Merit Scholarship</strong>: Awarded full undergraduate merit scholarship at UET Taxila (2023 to 2027).</li>
+        <li><strong>1st Place Winner</strong>: CyberHack 2025 National Hackathon.</li>
+        <li><strong>Hackathon Awards</strong>: Recognized across 7 software engineering and artificial intelligence hackathons.</li>
+      </ul>
+    </section>
+
+    <!-- Academic References Section -->
+    <section id="references">
+      <h2>Academic References</h2>
+      <div class="references-grid">
+        <div class="ref-card">
+          <div class="ref-name">Prof. Bing Luo</div>
+          <div class="ref-role">Associate Professor</div>
+          <div class="ref-inst">
+            Data and Information Science<br>
+            Duke Kunshan University
+          </div>
+          <div class="ref-email">
+            <a href="mailto:bing.luo@dukekunshan.edu.cn">bing.luo@dukekunshan.edu.cn</a>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-name">Dr. Aun Irtaza</div>
+          <div class="ref-role">Professor &amp; Chairman</div>
+          <div class="ref-inst">
+            Department of Computer Science<br>
+            University of Engineering and Technology (UET) Taxila
+          </div>
+          <div class="ref-email">
+            <a href="mailto:aun.irtaza@uettaxila.edu.pk">aun.irtaza@uettaxila.edu.pk</a>
+          </div>
+        </div>
+
+        <div class="ref-card">
+          <div class="ref-name">Dr. Muhammad Javed Iqbal</div>
+          <div class="ref-role">Assistant Professor</div>
+          <div class="ref-inst">
+            Department of Computer Science<br>
+            University of Engineering and Technology (UET) Taxila
+          </div>
+          <div class="ref-email">
+            <a href="mailto:javed.iqbal@uettaxila.edu.pk">javed.iqbal@uettaxila.edu.pk</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+      <div>Last updated: November 2026</div>
+      <div>Hosted on GitLab Pages</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
