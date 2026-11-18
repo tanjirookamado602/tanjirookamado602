@@ -7,7 +7,7 @@ pages:
   stage: deploy
   script:
     - mkdir -p public
-    - cp index.html style.css script.js avatar.jpg Muhammad_Assad_Ullah_CV.pdf public/
+    - cp index.html style.css script.js avatar.jpg favicon.ico Muhammad_Assad_Ullah_CV.pdf public/
   artifacts:
     paths:
       - public
