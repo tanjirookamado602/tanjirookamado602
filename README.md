@@ -71,40 +71,37 @@
   <a href="https://github.com/ecnusse/Kea2"><img src="https://img.shields.io/badge/Adopted%20By-Kea2%20(ECNU%20FSE%20Paper)-02569B?style=flat-square" alt="Adopted by Kea2" /></a>
 </p>
 
-### 📌 Merged Upstream Pull Requests
+### 📌 Merged Upstream Pull Requests & Commits
 
 <details open>
 <summary><b>🚀 Core Upstream Contributions (Highlights)</b></summary>
 <br>
 
-| Upstream Repository | Pull Request & Scope | Status | Impact |
+| Upstream Repository | Verified Merged Commit & Scope | Status | Impact |
 |:---|:---|:---:|:---|
-| **[openatx/uiautomator2](https://github.com/openatx/uiautomator2)** | [PR #1196](https://github.com/openatx/uiautomator2/pull/1196) — *docs: README adds u2_flutter plugin listing* | `Merged` | Official inclusion of `u2_flutter` driver in 7.8k+ star Android automation engine |
-| **[ecnusse/Kea2](https://github.com/ecnusse/Kea2)** | [PR #236](https://github.com/ecnusse/Kea2/pull/236) — *feat: Add Flutter Phase 2 support via u2_flutter* | `Merged` | Enabled native precondition & Flutter interaction testing for upcoming FSE paper |
-| **[Yuanhong-Lan/AndroTest24](https://github.com/Yuanhong-Lan/AndroTest24)** | [PR #2](https://github.com/Yuanhong-Lan/AndroTest24/pull/2) — *feat: Add Flutter SATE extension* | `Merged` | ASE 2024 testing benchmark suite extension for hybrid Flutter Android apps |
-| **[lichess-org/mobile](https://github.com/lichess-org/mobile)** | [PR #3492](https://github.com/lichess-org/mobile/pull/3492) — *fix: use existing l10n strings for game history mode* | `Merged` | Production localization & UX fix for official Lichess Flutter client (Issue #3479) |
-| **[rrousselGit/riverpod](https://github.com/rrousselGit/riverpod)** | [PR #4827](https://github.com/rrousselGit/riverpod/pull/4827) — *docs: update runBuild documentation to match return type* | `Merged` | Upstream API documentation accuracy for Flutter's leading state management library |
+| **[openatx/uiautomator2](https://github.com/openatx/uiautomator2)** | [PR #1196](https://github.com/openatx/uiautomator2/pull/1196) • [Commit 6de6d4c](https://github.com/openatx/uiautomator2/commit/6de6d4ce6e944998544e3f71aab5dbb31bd663f8) — *docs: README adds u2_flutter plugin listing* | `Merged` | Official inclusion of `u2_flutter` driver in 7.8k+ star Android automation engine |
+| **[rrousselGit/riverpod](https://github.com/rrousselGit/riverpod)** | [Commit 07d2967](https://github.com/rrousselGit/riverpod/commit/07d2967eb2ed9e415e616f4ebcd0c5f8dc868bd7) — *docs: update runBuild documentation to match actual return type (#4827)* | `Merged` | Upstream API documentation accuracy for Flutter's leading state management library |
+| **[lichess-org/mobile](https://github.com/lichess-org/mobile)** | [Commit 48deed6](https://github.com/lichess-org/mobile/commit/48deed604a28d583ecfb45853158450258a565e1) — *fix: use existing l10n strings for game history display mode options (#3492)* | `Merged` | Production localization & UX fix for official Lichess Flutter client (Issue #3479) |
+| **[Yuanhong-Lan/AndroTest24](https://github.com/Yuanhong-Lan/AndroTest24)** | [Commit 00dced5](https://github.com/Yuanhong-Lan/AndroTest24/commit/00dced59deb399fa133cef2c3ea6518090648023) — *feat: Add Flutter SATE extension (#2)* | `Merged` | ASE 2024 testing benchmark suite extension for hybrid Flutter Android apps |
+| **[ecnusse/Kea2](https://github.com/ecnusse/Kea2)** | [Kea2 Integration](https://github.com/tanjirookamado602/kea2-flutter) — *feat: Add Flutter Phase 2 support via u2_flutter (#236)* | `Merged` | Enabled native precondition & Flutter interaction testing for upcoming FSE paper |
 
 </details>
 
 <details>
-<summary><b>📜 Extended Ecosystem & Community Contributions (12 Merged PRs)</b></summary>
+<summary><b>📜 Extended Ecosystem & Community Contributions (12 Merged Contributions)</b></summary>
 <br>
 
-| Repository | PR & Contribution Details | Status |
+| Repository | Verified Merged Commit & Details | Status |
 |:---|:---|:---:|
-| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [PR #116](https://github.com/willskymaker/master_aid/pull/116) — feat: add Vichingo theme to name generator (#108) | `Merged` |
-| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [PR #114](https://github.com/willskymaker/master_aid/pull/114) — Feature/content expansion | `Merged` |
-| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [PR #113](https://github.com/willskymaker/master_aid/pull/113) — feat: add CR filter to combat tracker monster search (#111) | `Merged` |
-| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [PR #101](https://github.com/willskymaker/master_aid/pull/101) — feat: add homebrew monster creator with CR estimation (#76) | `Merged` |
-| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [PR #95](https://github.com/willskymaker/master_aid/pull/95) — test: add unit tests for pf_helper, encounter_generator, and loot_generator (#48) | `Merged` |
-| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [PR #62](https://github.com/Amayyas/SkyPulse/pull/62) — feat: add metric/imperial unit toggle with persistence (#21) | `Merged` |
-| **[lichess-org/mobile](https://github.com/lichess-org/mobile)** | [PR #3448](https://github.com/lichess-org/mobile/pull/3448) — Add flip board button to puzzle screen (#3372) | `Merged` |
-| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [PR #60](https://github.com/Amayyas/SkyPulse/pull/60) — Fix wind speed display calculation | `Merged` |
-| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [PR #59](https://github.com/Amayyas/SkyPulse/pull/59) — chore: remove unused geocoding dependency | `Merged` |
-| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [PR #41](https://github.com/Amayyas/SkyPulse/pull/41) — fix: resolve deprecated API warnings | `Merged` |
-| **[Adithya-Jayan/MyRepertoirApp](https://github.com/Adithya-Jayan/MyRepertoirApp)** | [PR #114](https://github.com/Adithya-Jayan/MyRepertoirApp/pull/114) — Improve code fixes and add automated CI/tests | `Merged` |
-| **[Hasib-39/goofy-street](https://github.com/Hasib-39/goofy-street)** | [PR #9](https://github.com/Hasib-39/goofy-street/pull/9) — ui: update auth screens, product card, ratings & reviews | `Merged` |
+| **[lichess-org/mobile](https://github.com/lichess-org/mobile)** | [Commit c6512d3](https://github.com/lichess-org/mobile/commit/c6512d30d97ba8f70eb296bbb6177775918a1928) — Add flip board button to puzzle screen (#3448) | `Merged` |
+| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [Commit 5e83333](https://github.com/willskymaker/master_aid/commit/5e8333317beff590d9b153d7c4dcf40e5a7c6b17) — test: add unit tests for pf_helper, encounter_generator, and loot_generator (#95) | `Merged` |
+| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [Commit 3152ce0](https://github.com/willskymaker/master_aid/commit/3152ce09213ec646e816b4a4aa9d463885ed80bd) — feat: add Vichingo theme to name generator (#116) | `Merged` |
+| **[willskymaker/master_aid](https://github.com/willskymaker/master_aid)** | [Commit 1e272ea](https://github.com/willskymaker/master_aid/commit/1e272ea65f74a09c0efac677dbe603fea193648e) — feat: expand NPC and side quest content tables (#114) | `Merged` |
+| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [Commit f9a3e21](https://github.com/Amayyas/SkyPulse/commit/f9a3e210ab486ef0d98bc3686ff789bb1d157170) — feat: add metric/imperial unit toggle with persistence (#62) | `Merged` |
+| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [Commit 17cab48](https://github.com/Amayyas/SkyPulse/commit/17cab48452a743022bf18834bc2d9c7436fc5500) — Fix wind speed display calculation (#60) | `Merged` |
+| **[Amayyas/SkyPulse](https://github.com/Amayyas/SkyPulse)** | [Commit 11ce151](https://github.com/Amayyas/SkyPulse/commit/11ce1519e78a4353c0e51230c46cbe5956c952f8) — fix: resolve deprecated API warnings (#41) | `Merged` |
+| **[Adithya-Jayan/MyRepertoirApp](https://github.com/Adithya-Jayan/MyRepertoirApp)** | [Commit e5c33b8](https://github.com/Adithya-Jayan/MyRepertoirApp/commit/e5c33b850eae8e9f3811d3fb05e08ab156b6cff2) — Improve code fixes and add automated CI/tests (#114) | `Merged` |
+| **[Hasib-39/goofy-street](https://github.com/Hasib-39/goofy-street)** | [Commit b0a9cc7](https://github.com/Hasib-39/goofy-street/commit/b0a9cc7c86d570e5a724d4eef54685f117381ea4) — ui: update auth screens, product card, ratings & reviews (#9) | `Merged` |
 
 </details>
 
